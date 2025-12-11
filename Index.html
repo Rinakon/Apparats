@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Магазин аппаратов</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Плавная прокрутка для якорей -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-  <nav>
+  <nav aria-label="Основная навигация">
     <ul>
-      <li><a href="#catalog" class="tab-link">Каталог аппаратов</a></li>
-      <li><a href="#news" class="tab-link">Новости</a></li>
-      <li><a href="#cart" class="tab-link">Корзина</a></li>
-      <li><a href="#reviews" class="tab-link">Отзывы</a></li>
-      <li><a href="#contact" class="tab-link">Контакты</a></li>
+      <li><a href="#catalog" class="tab-link" data-tab="catalog">Каталог аппаратов</a></li>
+      <li><a href="#news" class="tab-link" data-tab="news">Новости</a></li>
+      <li><a href="#cart" class="tab-link" data-tab="cart">Корзина</a></li>
+      <li><a href="#reviews" class="tab-link" data-tab="reviews">Отзывы</a></li>
+      <li><a href="#contact" class="tab-link" data-tab="contact">Контакты</a></li>
     </ul>
   </nav>
 
@@ -21,7 +27,7 @@
     <section id="catalog" class="tab-content active">
       <h2>Каталог аппаратов</h2>
       <div class="product">
-        <img src="apparat.jpg" alt="Аппарат">
+        <img src="apparat.jpg" alt="Профессиональный аппарат для ухода">
         <p>Профессиональный аппарат для ухода</p>
       </div>
     </section>
